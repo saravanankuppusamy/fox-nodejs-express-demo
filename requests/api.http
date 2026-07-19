@@ -1,0 +1,53 @@
+### Minimal server health
+GET http://localhost:3003/api/health
+
+### List users with query string
+GET http://localhost:3004/api/users?q=ali&limit=10
+
+### Create a user
+POST http://localhost:3004/api/users
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "email": "charlie@example.com"
+}
+
+### Async config
+GET http://localhost:3006/api/config
+
+### Trigger centralized error handling
+GET http://localhost:3006/api/fail
+
+### Validate a good request
+POST http://localhost:3007/api/users
+Content-Type: application/json
+
+{
+  "name": "Dana",
+  "email": "dana@example.com",
+  "age": 35
+}
+
+### Validate a bad request
+POST http://localhost:3007/api/users
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "not-an-email",
+  "age": -1
+}
+
+### Capstone products
+GET http://localhost:3010/api/products?q=node
+
+### Create capstone product
+POST http://localhost:3010/api/products
+Content-Type: application/json
+
+{
+  "name": "Express Demo Pack",
+  "category": "tool",
+  "price": 29.99
+}

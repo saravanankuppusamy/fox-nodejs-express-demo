@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Node Express Product API</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Node Express Product API</h1>
+      <p>A small browser client for the capstone REST API.</p>
+    </header>
+    <section>
+      <h2>Add a product</h2>
+      <form id="product-form">
+        <input name="name" placeholder="Product name" required />
+        <select name="category"><option>course</option><option>guide</option><option>tool</option></select>
+        <input name="price" type="number" min="0.01" step="0.01" placeholder="Price" required />
+        <button>Add</button>
+      </form>
+      <p id="message" aria-live="polite"></p>
+    </section>
+    <section>
+      <h2>Products</h2>
+      <button id="refresh" type="button">Refresh</button>
+      <ul id="products"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

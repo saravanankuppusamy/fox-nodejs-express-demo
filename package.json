@@ -1,0 +1,26 @@
+{
+  "name": "node-express-2hr-demo-bundle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Progressive Node.js and Express demos for a two-hour instructor-led session",
+  "scripts": {
+    "demo:node": "node demos/01-node-runtime/hello.js",
+    "demo:modules": "node demos/02-es-modules/app.js",
+    "demo:minimal": "node demos/03-minimal-express/server.js",
+    "demo:routes": "node demos/04-routing-crud/server.js",
+    "demo:middleware": "node demos/05-middleware-and-forms/server.js",
+    "demo:async": "node demos/06-async-errors/server.js",
+    "demo:secure": "node --env-file-if-exists=.env demos/07-security-validation/server.js",
+    "demo:capstone": "node --env-file-if-exists=.env capstone/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.25.67"
+  }
+}

@@ -1,0 +1,5 @@
+[
+  {"id":"p-100","name":"Node.js Fundamentals","category":"course","price":49.99},
+  {"id":"p-200","name":"Express API Workshop","category":"course","price":79.99},
+  {"id":"p-300","name":"API Security Checklist","category":"guide","price":19.99}
+]

@@ -1,0 +1,7 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #f4f6f8; color: #1f2937; }
+main { max-width: 640px; margin: 3rem auto; background: white; padding: 2rem; border-radius: 12px; }
+form { display: grid; gap: 1rem; }
+label { display: grid; gap: .35rem; font-weight: 600; }
+input, textarea, button { font: inherit; padding: .7rem; }
+textarea { min-height: 110px; }
+button { cursor: pointer; }

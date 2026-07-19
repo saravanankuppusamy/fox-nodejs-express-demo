@@ -1,0 +1,5 @@
+{
+  "application": "Async Express Demo",
+  "version": "1.0.0",
+  "features": ["async-await", "Promise.all", "central-error-handler"]
+}
